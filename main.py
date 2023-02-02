@@ -70,18 +70,14 @@ def download():
         else:
             engine.setProperty('rate',60)
             setvoice()
-
-#icon
+       
 image_icon=PhotoImage(file="speaker.png")
 root.iconphoto(False,image_icon) 
 
-#Top frame
 Top_frame=Frame(root,bg="mint cream",width=450,height=450)
 Top_frame.place(x=0,y=0)
 
 Label(Top_frame,text='TEXT to SPEECH',font='Dotum 20 bold',bg='mint cream',fg='lime green').place(x=115,y=30)
-
-############
 
 text_area=Text(root,font="robote 20 ",bg="white",relief=GROOVE,wrap=WORD)
 text_area.place(x=10,y=90,width=430,height=350)
